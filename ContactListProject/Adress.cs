@@ -38,5 +38,10 @@ namespace ContactListProject
         {
             return $"{City} - {State}, {District}, {Street} - nº{Number}";
         }
+
+        public string ConvertAdressToCSV()
+        {
+            return $"{City};{State};{District};{Street};{Number}";
+        }
     }
 }
